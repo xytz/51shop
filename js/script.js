@@ -101,6 +101,15 @@
 		fnTab($(".tabNav4"),$(".tabCon4"),'mouseover');
 	})();
 
+	 //today 鼠标移入效果
+	$(".today ol li img").each(function(index){
+		$(this).hover(function(){
+			$("[class^=day_info]").eq(index).css("display","block");
+		},function(){
+			$("[class^=day_info]").eq(index).css("display","none");
+		})
+	});
+	 
 	//pic 自动播放的焦点图
 	(function(){
 		var oDiv = $(".pic");
