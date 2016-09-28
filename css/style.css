@@ -193,13 +193,16 @@ no-repeat 0 2px; padding-left:20px; }
 .today ol { width:302px; height:254px; margin-left:10px; }
 .today ol li { width:40px; height:40px; text-align:center; background:#ededed; float:left; margin:0 3px 2px 0; font:bold 16px Arial; line-height:40px; color:#666; cursor:pointer; position:relative; }
 .today ol li.other { background:#f8f8f8; color:#cccccc; }
-.day_info { width:294px; height:84px; padding:10px; position:absolute; top:360px; left:250px; border:1px solid #c0c0c0; box-shadow:3px 3px 0 #bfbfbf; background:white; display:none; }
-.day_info .img_info { border:2px solid #ccc; }
-.day_info .text { position:absolute; top:-10px; left:100px; }
-.day_info h4 { color:#333; margin-bottom:8px; }
-.day_info strong { color:#ccc; font-size:18px; }
-.day_info p { color:#999; width:200px; }
-.day_info .arrow { position:absolute; top:44px; left:-8px; }
+[class^=day_info] { width:294px; height:84px; padding:10px; position:absolute; border:1px solid #c0c0c0; box-shadow:3px 3px 0 #bfbfbf; background:white; z-index:100; display:none; }
+.day_info1 { top:230px; left:294px; }
+.day_info2 { top:316px; left:120px; }
+.day_info3 { top:360px; left:250px; }
+[class^=day_info] .img_info { border:2px solid #ccc; }
+[class^=day_info] .text { position:absolute; top:-10px; left:100px; }
+[class^=day_info] h4 { color:#333; margin-bottom:8px; }
+[class^=day_info] strong { color:#ccc; font-size:18px; }
+[class^=day_info] p { color:#999; width:200px; }
+[class^=day_info] .arrow { position:absolute; top:44px; left:-8px; }
 
 /* RECOMMEND精彩推荐 */
 .recommend .pic { width:320px; height:180px; position:relative; background:#f8f8f8; border-radius:6px; }
